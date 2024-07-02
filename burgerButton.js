@@ -8,5 +8,8 @@ burgerButton.addEventListener('click', () => {
     } else {
         burgerNav.classList.remove('navVisible');
         burgerNav.classList.add('navHidden');
+
     }
+
+
 });

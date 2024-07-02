@@ -5,16 +5,16 @@ header {
     width: 100%;
     background-color: grey;
     padding: 10px;
-    
+
 }
 
-.burger {
+#burgerButton {
     font-size: 30px;
     cursor: pointer;
     background: none;
     border: none;
     z-index: 10;
-    gap: 10px;
+    padding: 10px;
 
 }
 
@@ -22,20 +22,65 @@ header {
 #burgerNav a {
     text-decoration: none;
     color: black;
-    margin: 10px;
-    font-size: 20px;
-    
+    padding: 20px;
+    font-size: 3rem;
+    font-weight: bold;
 
 }
 
+nav {}
+
 .navVisible {
-    max-height: 500px;
+    height: 500px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    background-color: rgb(220, 215, 215);
 }
 
 .navHidden,
 .burgerNav {
-    display: none;
+    visibility: hidden;
     max-height: 0;
     padding: 0 20px;
+    opacity: 0;
+}
+
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+nav a:nth-child(odd) {
+    animation: slideInLeft 1.5s forwards;
+
+}
+
+nav a:nth-child(even) {
+    animation: slideInRight 1.5s forwards;
 }
