@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    background-color: grey;
+    padding: 10px;
+    
+}
+
+.burger {
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 10;
+    gap: 10px;
+
+}
+
+
+#burgerNav a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-size: 20px;
+    
+
+}
+
+.navVisible {
+    max-height: 500px;
+    padding: 20px;
+}
+
+.navHidden,
+.burgerNav {
+    display: none;
+    max-height: 0;
+    padding: 0 20px;
+}

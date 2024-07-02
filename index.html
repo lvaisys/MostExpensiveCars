@@ -7,11 +7,24 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="hero.css">
   <script type="module" src="main.js"></script>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./burgerButton.js" defer></script>
+
+  
 </head>
 <body>
-  <header>meniu su nuoroda į puslapį su automobiliais arbar į hero puslapį</header>
+  <header>
+    <button id="burgerButton" class="burger">&#9776;</button>
+    <nav id="burgerNav" class="navHidden"
+    class="burgerNav">
+        <a href="#hero" class="heroNav">Hero</a>
+        <a href="#cars" class="carsNav">Cars</a>
+        <a href="#aboutUs" class="aboutUsNav">About Us</a>
+        <a href="#contactUs" class="contactUsNav">Contact Us</a>
+    </nav>
+  </header>
 
-<body>
+
   <section>hero</section>
   <section>about us</section>
   <section>contact us dialog button</section>
