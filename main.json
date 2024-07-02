@@ -1,0 +1,60 @@
+{
+    "superExpensiveCars": [
+      {
+        "id": 1,
+        "name": "Bugatti La Voiture Noire",
+        "manufacturer": "Bugatti",
+        "price": 19000000,
+        "year": 2019,
+        "top_speed": "261 mph",
+        "0-100_kmh": "2.5 seconds",
+        "engine": "8.0L Quad-Turbocharged W16",
+        "imageUrl": "https://s1.cdn.autoevolution.com/images/gallery/BUGATTI-La-Voiture-Noire-6531_1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Pagani Zonda HP Barchetta",
+        "manufacturer": "Pagani",
+        "price": 17500000,
+        "year": 2018,
+        "top_speed": "221 mph",
+        "0-100_kmh": "3.4 seconds",
+        "engine": "7.3L V12",
+        "imageUrl": "https://exclusivecarregistry.com/images/cars/preview/thumb_25902.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Rolls-Royce Sweptail",
+        "manufacturer": "Rolls-Royce",
+        "price": 13000000,
+        "year": 2017,
+        "top_speed": "150 mph",
+        "0-100_kmh": "5.6 seconds",
+        "engine": "6.75L V12",
+        "imageUrl": "https://www.topcarrating.com/rolls-royce/2017-rolls-royce-sweptail.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Koenigsegg CCXR Trevita",
+        "manufacturer": "Koenigsegg",
+        "price": 4800000,
+        "year": 2010,
+        "top_speed": "254 mph",
+        "0-100_kmh": "2.9 seconds",
+        "engine": "4.8L Twin-Supercharged V8",
+        "imageUrl": "https://www.supercars.net/blog/wp-content/uploads/2016/01/Koenigsegg_06.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Lamborghini Veneno",
+        "manufacturer": "Lamborghini",
+        "price": 4500000,
+        "year": 2014,
+        "top_speed": "221 mph",
+        "0-100_kmh": "2.8 seconds",
+        "engine": "6.5L V12",
+        "imageUrl": "https://www.secret-classics.com/wp-content/uploads/2021/11/LamborghiniVeneno_2.jpg"
+      }
+    ]
+  }
+  
