@@ -1,10 +1,10 @@
 export default class CarDetailsModal {
-  constructor(model, photo, manufacturer, price, topSpeed, acceleration, engine, description, productionYears) {
+  constructor(model, imageUrl, manufacturer, price, top_speed, acceleration, engine, description, productionYears) {
     this.model = model;
-    this.photo = photo;
+    this.imageUrl = imageUrl;
     this.manufacturer = manufacturer;
     this.price = price;
-    this.topSpeed = topSpeed;
+    this.topSpeed = top_speed;
     this.acceleration = acceleration;
     this.engine = engine;
     this.description = description;
@@ -25,14 +25,14 @@ export default class CarDetailsModal {
     modelHeading.textContent = this.model;
 
     const image = document.createElement('img');
-    image.setAttribute('src', this.photo);
+    image.setAttribute('src', this.imageUrl);
     image.setAttribute('alt', `${this.model} thumbnail`);
 
     const priceTag = document.createElement('h3');
-    priceTag.textContent = this.price + '$';
+    priceTag.textContent = `Price: ${this.price}$`;
 
     const topSpeedTag = document.createElement('h3');
-    topSpeedTag.textContent = this.topSpeed + 'km/h';
+    topSpeedTag.textContent = `Top speed: ${this.topSpeed}km/h`;
 
     const accelerationTag = document.createElement('h3');
     accelerationTag.textContent = `0-100km/h in ${this.acceleration}s`;
@@ -44,7 +44,7 @@ export default class CarDetailsModal {
     descriptionTag.textContent = this.description;
 
     const productionTag = document.createElement('h3');
-    productionTag.textContent = this.productionYears;
+    productionTag.textContent = `Production years: ${this.productionYears}`;
 
     wrapperDiv.append(manufacturerHeading, modelHeading, image, priceTag, productionTag, topSpeedTag, accelerationTag, descriptionTag);
 

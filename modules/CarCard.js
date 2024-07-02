@@ -1,17 +1,17 @@
 import CarDetailsModal from "./CarDetailsModal.js";
 
 export default class CarCard {
-  constructor({ id, model, photo, manufacturer, price, topSpeed, acceleration, engine, description, productionYears }) {
+  constructor({ id, name, imageUrl, manufacturer, price, top_speed, acceleration, engine, description, year }) {
     this.id = id;
-    this.model = model;
-    this.photo = photo;
+    this.model = name;
+    this.imageUrl = imageUrl;
     this.manufacturer = manufacturer;
     this.price = price;
-    this.topSpeed = topSpeed;
+    this.topSpeed = top_speed;
     this.acceleration = acceleration;
     this.engine = engine;
     this.description = description;
-    this.productionYears = productionYears;
+    this.productionYears = year;
     return this.render();
   }
 
@@ -26,8 +26,8 @@ export default class CarCard {
     modelHeading.textContent = this.model;
 
     const image = document.createElement('img');
-    image.setAttribute('src', this.photo);
-    image.setAttribute('alt', `${this.name} thumbnail`);
+    image.setAttribute('src', this.imageUrl);
+    image.setAttribute('alt', `${this.model} thumbnail`);
 
     const priceTag = document.createElement('h3');
     priceTag.textContent = this.price + '$';
@@ -35,7 +35,7 @@ export default class CarCard {
     const moreInfoButton = document.createElement('button');
     moreInfoButton.textContent = 'Learn more';
     moreInfoButton.addEventListener('click', () => {
-      const moreModal = new CarDetailsModal(this.model, this.photo, this.manufacturer, this.price, this.topSpeed, this.acceleration, this.engine, this.description, this.productionYears);
+      const moreModal = new CarDetailsModal(this.model, this.imageUrl, this.manufacturer, this.price, this.topSpeed, this.acceleration, this.engine, this.description, this.productionYears);
       carDiv.appendChild(moreModal);
       moreModal.showModal();
     });
