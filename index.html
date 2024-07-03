@@ -14,8 +14,23 @@
 <body>
   <section>hero</section>
   <section>about us</section>
-  <section>contact us dialog button</section>
-
+  <section>
+    <div id="contactDialog" class="dialog">
+      <div class="dialogContent">
+        <span id="closeDialog" class="closeButton">&times;</span>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+</section>
 </body>
 <footer> <!-- soc tinklai, copyright terms ir kontaktai -->
 
