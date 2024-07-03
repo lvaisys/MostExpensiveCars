@@ -97,7 +97,7 @@ button:hover {
     }
 }
 
-/* ------------- iki čia headerio dalykai --------------------- */
+/* ^^^^^^^^ iki čia headerio dalykai ^^^^^^^ */
 
 html {
     scroll-behavior: smooth;
@@ -159,8 +159,14 @@ footer a:hover {
 }
 
 /**/
+#hero{
+    height: 100vh;
+}
+#aboutUs, #contactUs{
+    height: 50vh;
 
-#hero {
+}
+#hero, #aboutUs{
     background-color: lightgrey;
     h1 {}
 
@@ -170,12 +176,13 @@ footer a:hover {
 
     h2 {
         text-align: center;
+        padding: 100px;
     }
 
     a {
         text-decoration: none;
         color: rgba(255, 255, 255, 0.333);
-        padding: 10px;
+        padding: 50px;
         font-size: 5rem;
         font-weight: bold;
         border: black solid;
@@ -184,9 +191,17 @@ footer a:hover {
         background-image: url("https://media.wired.com/photos/5b806816be2f8d3a624b77c9/master/pass/DIVO1.jpg") ;
         background-size: cover;
         background-position: center;
+        margin: auto;
         
         }
 
     a:hover {
         color: rgb(255, 255, 255);
     }}
+
+.bebrai{
+    text-align: center;
+    img{
+        max-height: 200px;
+        text-align: center;
+}}
