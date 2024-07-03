@@ -12,6 +12,7 @@ export default class CarCard {
     this.engine = engine;
     this.description = description;
     this.productionYears = year;
+    
     return this.render();
   }
 
