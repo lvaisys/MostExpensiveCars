@@ -161,9 +161,12 @@ footer a:hover {
 /**/
 
 #hero {
+    background-color: lightgrey;
     h1 {}
 
-    p {}
+    p {
+        padding: 10px;
+    }
 
     h2 {
         text-align: center;
@@ -171,13 +174,19 @@ footer a:hover {
 
     a {
         text-decoration: none;
-        color: black;
-        padding: 20px;
-        font-size: 3rem;
+        color: rgba(255, 255, 255, 0.333);
+        padding: 10px;
+        font-size: 5rem;
         font-weight: bold;
-
-    }
+        border: black solid;
+        border-radius: 10px;
+        background-color: rgb(220, 215, 215) ;
+        background-image: url("https://media.wired.com/photos/5b806816be2f8d3a624b77c9/master/pass/DIVO1.jpg") ;
+        background-size: cover;
+        background-position: center;
+        
+        }
 
     a:hover {
-        color: blue;
+        color: rgb(255, 255, 255);
     }}
