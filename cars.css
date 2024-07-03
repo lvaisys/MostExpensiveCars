@@ -1,0 +1,55 @@
+main {
+
+  color: white;
+  background-color: rgb(31, 31, 31);
+
+  h2 {
+    text-align: center;
+  }
+
+  #CarCards {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    >.carCard {
+      width: 400px;
+      height: 500px;
+      border: 4px solid rgb(112, 77, 1);
+      border-radius: 10px;
+      background-color: rgb(61, 61, 61);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      
+
+      button {
+        border: none;
+        background-color: rgb(75, 75, 182);
+        color: antiquewhite;
+        font-size: large;
+        padding: 15px;
+      }
+
+      >img {
+        width: 80%;
+      }
+
+      >dialog {
+        width: 80%;
+        height: auto;
+
+        .detailedCarWrapper {
+          >img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
