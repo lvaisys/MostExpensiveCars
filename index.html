@@ -7,9 +7,9 @@
   <title>Most expensive vehicles</title>
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="main.css">
   <script type="module" src="main.js"></script>
-  <link rel="stylesheet" href="./main.css">
-  <script src="./burgerButton.js" defer></script>
+  <script type="module" src="burgerButton.js"></script>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
       <a href="./index.html" class="heroNav">HOME</a>
       <a href="./cars.html" class="carsNav">CARS</a>
       <a href="#aboutUs" class="aboutUsNav">ABOUT US</a>
-      <a href="#contactUs" class="contactUsNav">CONTACT US</a>
+      <a href="#contactDialog" class="contactUsNav">CONTACT US</a>
     </nav>
   </header>
 
@@ -55,6 +55,7 @@
 
 
 
+
   <section id="aboutUs">
     <h1>About Us</h1>
     <p>Bebriukai yra maži, žavūs gyvūnai, gyvenantys prie upių ir ežerų. Jie yra žinomi dėl savo gebėjimo statyti sudėtingas užtvankas ir namus, vadinamus bebrų namais, iš šakų, purvo ir akmenų. 
@@ -67,7 +68,26 @@
     </div>
   </section>
 
-  <section>contact us dialog button</section>
+  
+
+  <section>
+    <div id="contactDialog" class="dialog">
+      <div class="dialogContent">
+        <span id="closeDialog" class="closeButton">&times;</span>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+</section>
+
 
 </body>
 

@@ -1,9 +1,10 @@
 import CarCard from "./modules/CarCard.js";
 
-fetch(`http://localhost:3000/superExpensiveCars`)
+fetch(`./main.json`)
   .then(res => res.json())
-  .then(cars => {
-    cars.forEach(car => {
+  .then(({superExpensiveCars}) => {
+    console.log(superExpensiveCars);
+    superExpensiveCars.forEach(car => {
       const carDiv = new CarCard(car);
       document.querySelector('#CarCards').appendChild(carDiv);
     });
