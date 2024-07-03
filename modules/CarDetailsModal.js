@@ -1,5 +1,5 @@
 export default class CarDetailsModal {
-  constructor(model, imageUrl, manufacturer, price, top_speed, acceleration, engine, description, productionYears) {
+  constructor(model, imageUrl, manufacturer, price, top_speed, acceleration, engine, productionYears, quantity) {
     this.model = model;
     this.imageUrl = imageUrl;
     this.manufacturer = manufacturer;
@@ -7,8 +7,8 @@ export default class CarDetailsModal {
     this.topSpeed = top_speed;
     this.acceleration = acceleration;
     this.engine = engine;
-    this.description = description;
     this.productionYears = productionYears;
+    this.quantity = quantity;
 
     return this.render();
   }
@@ -40,13 +40,13 @@ export default class CarDetailsModal {
     const engineTag = document.createElement('h3');
     engineTag.textContent = `Engine:  ${this.engine}`;
 
-    const descriptionTag = document.createElement('h3');
-    descriptionTag.textContent = this.description;
+    const quantityTag = document.createElement('h3');
+    quantityTag.textContent = `Quantity: ${this.quantity}`;
 
     const productionTag = document.createElement('h3');
     productionTag.textContent = `Production years: ${this.productionYears}`;
 
-    wrapperDiv.append(manufacturerHeading, modelHeading, image, priceTag, productionTag, topSpeedTag, accelerationTag, descriptionTag);
+    wrapperDiv.append(manufacturerHeading, modelHeading, image, priceTag, productionTag, topSpeedTag, accelerationTag, engineTag, quantityTag);
 
     const exitButton = document.createElement('button');
     exitButton.textContent = `Less`;
