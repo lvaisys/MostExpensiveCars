@@ -1,0 +1,124 @@
+{
+    "superExpensiveCars": [
+      {
+        "id": 1,
+        "name": "Bugatti La Voiture Noire",
+        "manufacturer": "Bugatti",
+        "price": 19000000,
+        "year": 2019,
+        "quantity": 1,
+        "top_speed": "420 kmh",
+        "0-100_kmh": "2.5 seconds",
+        "engine": "8.0L Quad-Turbocharged W16",
+        "imageUrl": "https://s1.cdn.autoevolution.com/images/gallery/BUGATTI-La-Voiture-Noire-6531_1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Pagani Zonda HP Barchetta",
+        "manufacturer": "Pagani",
+        "price": 17500000,
+        "year": 2018,
+        "quantity": 3,
+        "top_speed": "355 km/h",
+        "0-100_kmh": "3.4 seconds",
+        "engine": "7.3L V12",
+        "imageUrl": "https://exclusivecarregistry.com/images/cars/preview/thumb_25902.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Rolls-Royce Sweptail",
+        "manufacturer": "Rolls-Royce",
+        "price": 13000000,
+        "year": 2017,
+        "quantity": 1,
+        "top_speed": "241 km/h",
+        "0-100_kmh": "5.6 seconds",
+        "engine": "6.75L V12",
+        "imageUrl": "https://www.topcarrating.com/rolls-royce/2017-rolls-royce-sweptail.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Koenigsegg CCXR Trevita",
+        "manufacturer": "Koenigsegg",
+        "price": 4800000,
+        "year": 2010,
+        "quantity": 2,
+        "top_speed": "410 km/h",
+        "0-100_kmh": "2.9 seconds",
+        "engine": "4.8L Twin-Supercharged V8",
+        "imageUrl": "https://www.supercars.net/blog/wp-content/uploads/2016/01/Koenigsegg_06.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Lamborghini Veneno",
+        "manufacturer": "Lamborghini",
+        "price": 4500000,
+        "year": 2014,
+        "quantity": 14,
+        "top_speed": "355 km/h",
+        "0-100_kmh": "2.8 seconds",
+        "engine": "6.5L V12",
+        "imageUrl": "https://www.secret-classics.com/wp-content/uploads/2021/11/LamborghiniVeneno_2.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Ferrari Pininfarina Sergio",
+        "manufacturer": "Ferrari",
+        "price": 3000000,
+        "year": 2015,
+        "quantity": 6,
+        "top_speed": "319 km/h",
+        "0-100_kmh": "3.4 seconds",
+        "engine": "4.5L V8",
+        "imageUrl": "https://cdn.motor1.com/images/mgl/kZNBM/s3/2013-ferrari-sergio-concept.jpg"
+      },
+      {
+        "id": 7,
+        "name": "McLaren P1 LM",
+        "manufacturer": "McLaren",
+        "price": 3600000,
+        "year": 2016,
+        "quantity": 5,
+        "top_speed": "345 km/h",
+        "0-100_kmh": "2.8 seconds",
+        "engine": "3.8L Twin-Turbo V8",
+        "imageUrl": "https://images.hgmsites.net/med/mclaren-p1-gtr_100487329_m.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Lykan Hypersport",
+        "manufacturer": "W Motors",
+        "price": 3400000,
+        "year": 2013,
+        "quantity": 7,
+        "top_speed": "395 km/h",
+        "0-100_kmh": "2.8 seconds",
+        "engine": "3.7L Twin-Turbo F6",
+        "imageUrl": "https://www.carscoops.com/wp-content/uploads/2013/12/2451a3a2-w-motors-lykan-hypersport-1025255b225255d.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Aston Martin Valkyrie",
+        "manufacturer": "Aston Martin",
+        "price": 3200000,
+        "year": 2020,
+        "quantity": 150,
+        "top_speed": "402 km/h",
+        "0-100_kmh": "2.5 seconds",
+        "engine": "6.5L V12",
+        "imageUrl": "https://astonmartinworks.com/wp-content/uploads/2020/10/JPG-Medium-Aston-Martin-Valkyrie_07-e1601996692201.jpg"
+      },
+      {
+        "id": 11220,
+        "name": "Mercedes-AMG One",
+        "manufacturer": "Mercedes-Benz",
+        "price": 2700000,
+        "year": 2021,
+        "quantity": 275,
+        "top_speed": "350 km/h",
+        "0-100_kmh": "2.7 seconds",
+        "engine": "1.6L V6 Hybrid",
+        "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/2020-amg-project-1-fmg-003-ol-1574887544.jpg"
+      }
+    ]
+  }
