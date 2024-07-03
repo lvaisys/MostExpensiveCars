@@ -1,3 +1,9 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
 main {
 
   color: white;
@@ -29,7 +35,7 @@ main {
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      
+
 
       button {
         border: none;
@@ -48,8 +54,17 @@ main {
         height: auto;
 
         .detailedCarWrapper {
-          >img {
-            width: 80%;
+          >.scrollHoriz {
+            background-color: #333;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+            height: 500px;
+
+            >img {
+              padding: 10px;
+              height: 95%;
+            }
           }
         }
       }
