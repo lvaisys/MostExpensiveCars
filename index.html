@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,55 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="hero.css">
   <script type="module" src="main.js"></script>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./burgerButton.js" defer></script>
 </head>
-<body>
-  <header>meniu su nuoroda į puslapį su automobiliais arbar į hero puslapį</header>
 
 <body>
-  <section>hero</section>
+
+  <header>
+    <button id="burgerButton">&#9776;</button>
+    <nav id="burgerNav" class="navHidden">
+      <a href="./index.html" class="heroNav">HOME</a>
+      <a href="./cars.html" class="carsNav">CARS</a>
+      <a href="#aboutUs" class="aboutUsNav">ABOUT US</a>
+      <a href="#contactUs" class="contactUsNav">CONTACT US</a>
+    </nav>
+  </header>
+
+
+  <section id="hero">
+    <h1>
+      Are you a billionaire looking for your next big automotive purchase? Or just an idle fantasist? Either way,
+      you'll want to check out our list of the most expensive cars in the world. </h2>
+
+    <p>
+      Most people can only dream of owning supercars or luxury models. The average new car costs around £30,000, which
+      wouldn't even cover the cost of a door mirror on the world's most expensive cars
+    </p>
+
+    <p>
+      hese incredibly expensive cars, often termed 'hypercars' or 'megacars,' surpass even sports and supercars.
+      Except for the ultra-luxury Rolls-Royce Sweptail, they are all extravagant, extremely powerful, and thrilling,
+      with top speeds exceeding 200 mph. Some also rank among the fastest cars in the world.</p>
+
+    <p>
+      Many of these cars are bespoke creations, custom-built for wealthy owners. While some might be seen cruising the
+      streets, many are tucked away in private garages, hidden from public view.
+    </p>
+    <p>
+      The values of the world's most expensive cars are expected to keep rising. This list features models from
+      Lamborghini, Aston Martin, and Koenigsegg, with more than half of the top 10 being Bugattis. It includes cars
+      built and sold to private owners in the last five years.
+    </p>
+    <h2><a href="./cars.html">VIEW CARS</a></h2>
+  </section>
+
+
+
+
   <section>about us</section>
+
   <section>
     <div id="contactDialog" class="dialog">
       <div class="dialogContent">
@@ -31,29 +74,32 @@
       </div>
     </div>
 </section>
+
+
 </body>
+
 <footer> <!-- soc tinklai, copyright terms ir kontaktai -->
 
-<div>© Copyright 2024 MostExpensiveCars</div>
+  <div>© Copyright 2024 MostExpensiveCars</div>
 
-<div class="courier-prime">
-  <a href="#about"><span>About</span></a>
-  <a href="#legal"><span>Legal Notice</span></a>
-  <a href="#contact"><span>Contact</span></a>
-  <a href="#cookie"><span>Cookie Settings</span></a>
-</div>
+  <div class="courier-prime">
+    <a href="#about"><span>About</span></a>
+    <a href="#legal"><span>Legal Notice</span></a>
+    <a href="#contact"><span>Contact</span></a>
+    <a href="#cookie"><span>Cookie Settings</span></a>
+  </div>
 
-<div>
-  <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
-  <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
-  <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
-  <a href="https://www.pinterest.com" target="_blank"><i class="bi bi-pinterest"></i></a>
-  <a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
-  <a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
-</div>
+  <div>
+    <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+    <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+    <a href="https://www.pinterest.com" target="_blank"><i class="bi bi-pinterest"></i></a>
+    <a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+    <a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+  </div>
 
 </footer>
 
-  
 </body>
+
 </html>
