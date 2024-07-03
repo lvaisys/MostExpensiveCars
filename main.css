@@ -21,7 +21,11 @@ header {
     border: none;
     z-index: 10;
     padding: 10px;
+    
+}
 
+button:hover {
+    color: blue;
 }
 
 #burgerNav a {
@@ -31,6 +35,10 @@ header {
     font-size: 3rem;
     font-weight: bold;
 
+}
+
+#burgerNav a:hover {
+    color: blue;
 }
 
 .navVisible {
@@ -44,14 +52,16 @@ header {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
     background-color: rgb(220, 215, 215);
+
     a:nth-child(odd) {
         animation: slideInLeft 1.0s forwards;
-    
+
     }
+
     a:nth-child(even) {
         animation: slideInRight 1.0s forwards;
     }
-    
+
 }
 
 .navHidden,
@@ -89,54 +99,94 @@ header {
 
 /* ------------- iki čia headerio dalykai --------------------- */
 
-html{
+html {
     scroll-behavior: smooth;
-  }
-  body{
+}
+
+body {
     height: 400vh;
     font-family: "Roboto", sans-serif;
     background-color: #fff;
-  }
-  section[id]{
-      scroll-margin-top: 80px;
-      padding: 30px;
-  }
+}
 
-  .courier-prime {
+section[id] {
+    scroll-margin-top: 80px;
+    padding: 30px;
+}
+
+.courier-prime {
     font-family: 'Courier Prime', monospace;
 }
 
 footer {
-     height: 50vh;
-     padding: 30px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     text-align: center;
-     font-size: 1.5rem;
-     line-height: 2rem;   
-}    
-footer div{
+    height: 50vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+footer div {
     margin-bottom: 1rem;
 }
+
 footer .courier-prime a {
-    margin: 0 1rem; 
-    text-decoration: none; 
+    margin: 0 1rem;
+    text-decoration: none;
     color: inherit;
 }
+
 footer .courier-prime a span {
-    display: inline-block; /* span within a tags are inline-block */
+    display: inline-block;
+    /* span within a tags are inline-block */
 }
 
 footer a {
-    margin: 0 0.5rem; /* horizontal margin between icons */
-    font-size: 2rem; /* icon size*/
+    margin: 0 0.5rem;
+    /* horizontal margin between icons */
+    font-size: 2rem;
+    /* icon size*/
     color: darkgrey;
 }
 
 footer a:hover {
     color: blue;
-    text-decoration: underline; /* Underline links on hover */
+    text-decoration: underline;
+    /* Underline links on hover */
 }
 
+/**/
 
+#hero {
+    background-color: lightgrey;
+    h1 {}
+
+    p {
+        padding: 10px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.333);
+        padding: 10px;
+        font-size: 5rem;
+        font-weight: bold;
+        border: black solid;
+        border-radius: 10px;
+        background-color: rgb(220, 215, 215) ;
+        background-image: url("https://media.wired.com/photos/5b806816be2f8d3a624b77c9/master/pass/DIVO1.jpg") ;
+        background-size: cover;
+        background-position: center;
+        
+        }
+
+    a:hover {
+        color: rgb(255, 255, 255);
+    }}
