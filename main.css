@@ -41,6 +41,14 @@ nav {}
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
     background-color: rgb(220, 215, 215);
+    a:nth-child(odd) {
+        animation: slideInLeft 1.0s forwards;
+    
+    }
+    a:nth-child(even) {
+        animation: slideInRight 1.0s forwards;
+    }
+    
 }
 
 .navHidden,
@@ -76,11 +84,3 @@ nav {}
     }
 }
 
-nav a:nth-child(odd) {
-    animation: slideInLeft 1.5s forwards;
-
-}
-
-nav a:nth-child(even) {
-    animation: slideInRight 1.5s forwards;
-}
