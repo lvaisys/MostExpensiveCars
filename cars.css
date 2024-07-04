@@ -4,7 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
+main, body {
 
   color: #fff;
   background-color: rgb(31, 31, 31);
@@ -36,7 +36,6 @@ main {
       align-items: center;
       justify-content: space-evenly;
 
-
       button {
         border: none;
         background-color: rgb(75, 75, 182);
@@ -56,14 +55,48 @@ main {
         .detailedCarWrapper {
           >.scrollHoriz {
             background-color: #333;
-            overflow: auto;
+            overflow: hidden;
+            position: relative;
             white-space: nowrap;
             padding: 10px;
             height: 500px;
 
             >img {
+              position: absolute;
+              margin-left: auto;
+              margin-right: auto;
+              left: 0;
+              right: 0;
+              top: 0;
+              text-align: center;
+              opacity: 0;
+              transition: opacity 0.5s ease-in-out;
+              object-fit: cover;
               padding: 10px;
               height: 95%;
+            }
+            >.prevBtn {
+              position: absolute;
+              left: 0;
+              margin-top: auto;
+              margin-bottom: auto;
+              top: 0;
+              bottom: 0;
+              background-color:#00000000;
+              color: beige;
+
+            }>.nextBtn {
+              position: absolute;
+              right: 0;
+              margin-top: auto;
+              margin-bottom: auto;
+              top: 0;
+              bottom: 0;
+              color: beige;
+              background-color:#33333300;
+            }
+            .visible {
+              opacity: 1;
             }
           }
         }
