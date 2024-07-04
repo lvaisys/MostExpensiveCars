@@ -246,22 +246,22 @@ form button:hover {
 
 }
 #hero, #aboutUs{
-    background-color: lightgrey;
-    /* background-color: #333; */
+
+   background-color: lightgrey;
     
     h1 {
         text-transform: uppercase;
         letter-spacing: 2px;
         word-spacing: 2px;
         line-height: 1.2em;
+        padding: 20px;
     }
 
     p {
         padding: 20px;
-        /* margin: 0 0.5rem; */
         font-size: 1.5em;
         line-height: 1.5em;
-        /* font-weight: bold; */
+        font-weight: 100;
     }
 
     h2 {
