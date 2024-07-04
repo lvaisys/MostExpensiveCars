@@ -106,6 +106,10 @@ button:hover {
     }
 }
 
+.noScroll {
+    overflow-y: hidden;
+  }
+
 /* ^^^^^^^^ iki čia headerio dalykai ^^^^^^^ */
 
 html {
