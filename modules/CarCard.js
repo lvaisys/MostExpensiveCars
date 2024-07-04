@@ -37,6 +37,11 @@ export default class CarCard {
     moreInfoButton.textContent = 'Learn more';
     moreInfoButton.addEventListener('click', () => {
       const moreModal = new CarDetailsModal(this.model, this.images, this.manufacturer, this.price, this.topSpeed, this.acceleration, this.engine, this.productionYears, this.quantity);
+      window.onclick = function(event) {
+        if (event.target == moreModal) {
+          moreModal.remove();
+        }
+      }
       carDiv.appendChild(moreModal);
       moreModal.showModal();
     });

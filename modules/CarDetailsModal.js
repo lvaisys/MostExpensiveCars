@@ -9,6 +9,8 @@ export default class CarDetailsModal {
     this.engine = engine;
     this.productionYears = productionYears;
     this.quantity = quantity;
+    this.imageIndex = 0;
+    this.imageArray = [];
 
     return this.render();
   }
@@ -47,11 +49,36 @@ export default class CarDetailsModal {
     imageContainer.classList.add("scrollHoriz");
 
     this.images.forEach(image => {
-      const imageTest = document.createElement('img');
-      imageTest.setAttribute('src', image.imageUrl);
-      imageTest.setAttribute('alt', `${this.model} thumbnail`);
-      imageContainer.appendChild(imageTest);
+      const imageEl = document.createElement('img');
+      imageEl.setAttribute('src', image.imageUrl);
+      imageEl.setAttribute('alt', `${this.model} thumbnail`);
+      this.imageArray.push(imageEl);
     });
+    const next = document.createElement("button");
+    next.classList.add("nextBtn");
+    next.classList.add("bi");
+    next.classList.add("bi-caret-right");
+    next.addEventListener('click', () => {
+      this.imageIndex++;
+      if (this.imageIndex >= this.imageArray.length) {
+        this.imageIndex = 0;
+      }
+      this.showImage(this.imageIndex);
+    });
+    const prev = document.createElement("button");
+    prev.classList.add("prevBtn");
+    prev.classList.add("bi");
+    prev.classList.add("bi-caret-left");
+    prev.addEventListener('click', () => {
+      this.imageIndex--;
+      if (this.imageIndex < 0) {
+        this.imageIndex = this.imageArray.length - 1;
+      }
+      this.showImage(this.imageIndex);
+    });
+    this.imageArray[0].classList.add("visible");
+    imageContainer.append(...this.imageArray, prev, next);
+
 
     wrapperDiv.append(modelHeading, imageContainer, priceTag, productionTag, topSpeedTag, accelerationTag, engineTag, quantityTag);
     const exitButton = document.createElement('button');
@@ -62,5 +89,15 @@ export default class CarDetailsModal {
 
     dialogEl.append(wrapperDiv, exitButton);
     return dialogEl;
+  }
+
+  showImage(index) {
+    this.imageArray.forEach((img, i) => {
+      if (i === index) {
+        img.classList.add('visible');
+      } else {
+        img.classList.remove('visible');
+      }
+    });
   }
 }
