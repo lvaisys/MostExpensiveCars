@@ -251,22 +251,29 @@ form button:hover {
 
 /*------HERO STILIAI ----- */
 #hero{
-    height: 120vh;
+    min-height: 100vh;
 }
 #aboutUs, #contactUs{
-    height: 80vh;
-
+    min-height: 80vh;
 }
-#hero, #aboutUs{
 
-   background-color: lightgrey;
-    
+#hero,
+#aboutUs {
+     
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    box-sizing: border-box;
+
     h1 {
         text-transform: uppercase;
         letter-spacing: 2px;
         word-spacing: 2px;
         line-height: 1.2em;
-        padding: 20px;
+        padding: 20px;  
     }
 
     p {
@@ -278,23 +285,25 @@ form button:hover {
 
     h2 {
         text-align: center;
-        padding: 100px;
-    }
+       padding: 20px;
+    } 
 
     a {
         text-decoration: none;
         color: rgba(255, 255, 255, 0.333);
-        padding: 50px;
         font-size: 5rem;
         font-weight: bold;
-        border: black solid;
+        border: 4px solid rgb(112, 77, 1);
         border-radius: 10px;
         background-color: rgb(220, 215, 215);
         background-image: url("https://media.wired.com/photos/5b806816be2f8d3a624b77c9/master/pass/DIVO1.jpg");
         background-size: cover;
         background-position: center;
         margin: auto;
-
+        display: block; /* Ensures the link is treated as a block element */
+        box-sizing: border-box;
+        min-width: 1000px;
+        height: 400px;
     }
 
     a:hover {
@@ -306,8 +315,13 @@ form button:hover {
     text-align: center;
 
     img {
-        max-height: 200px;
+        max-width: 100%;
+        height: auto;
         text-align: center;
+        display: block;
+        margin: 0 auto;
+        border: 4px solid rgb(112, 77, 1);
+      border-radius: 10px;
     }
 }
 
