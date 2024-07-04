@@ -4,7 +4,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 /* ----- header stiliai po apačia iki kito komentaro ----- */
 header {
@@ -13,8 +13,8 @@ header {
     align-items: flex-start;
     flex-direction: column;
     background-color: grey;
-    padding: 10px;
-    
+    position: sticky;
+
 
 }
 
@@ -35,10 +35,10 @@ button:hover {
 #burgerNav a {
     text-decoration: none;
     color: black;
-    padding: 20px;
+    padding: 15px;
     font-size: 3rem;
     font-weight: bold;
-    
+
 
 }
 
@@ -47,8 +47,9 @@ button:hover {
 }
 
 .navVisible {
-    width:100%;
-    height: 500px;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,7 +57,9 @@ button:hover {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
     background-color: rgb(220, 215, 215);
+    z-index: 9;
     
+
 
     a:nth-child(odd) {
         animation: slideInLeft 1.0s forwards;
@@ -73,8 +76,9 @@ button:hover {
 .burgerNav {
     visibility: hidden;
     max-height: 0;
-    padding: 0 20px;
     opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
 }
 
 
@@ -106,7 +110,7 @@ button:hover {
 
 html {
     scroll-behavior: smooth;
-    
+
 }
 
 body {
@@ -206,7 +210,8 @@ form label {
     text-align: left;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
@@ -232,15 +237,20 @@ form button:hover {
 /*^^^^^^^ CONTACT US STILIAI ^^^^^^^*/
 
 /*------HERO STILIAI ----- */
-#hero{
+#hero {
     height: 100vh;
 }
-#aboutUs, #contactUs{
+
+#aboutUs,
+#contactUs {
     height: 50vh;
 
 }
-#hero, #aboutUs{
+
+#hero,
+#aboutUs {
     background-color: lightgrey;
+
     h1 {}
 
     p {
@@ -260,26 +270,26 @@ form button:hover {
         font-weight: bold;
         border: black solid;
         border-radius: 10px;
-        background-color: rgb(220, 215, 215) ;
-        background-image: url("https://media.wired.com/photos/5b806816be2f8d3a624b77c9/master/pass/DIVO1.jpg") ;
+        background-color: rgb(220, 215, 215);
+        background-image: url("https://media.wired.com/photos/5b806816be2f8d3a624b77c9/master/pass/DIVO1.jpg");
         background-size: cover;
         background-position: center;
         margin: auto;
-        
-        }
+
+    }
 
     a:hover {
         color: rgb(255, 255, 255);
-    }}
+    }
+}
 
-.bebrai{
+.bebrai {
     text-align: center;
-    img{
+
+    img {
         max-height: 200px;
         text-align: center;
-}}
+    }
+}
 
 /*^^^^^^ HERO STILIAI ^^^^^*/
-  
-  
-
