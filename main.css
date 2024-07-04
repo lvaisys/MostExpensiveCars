@@ -123,6 +123,12 @@ section[id] {
 .courier-prime {
     font-family: 'Courier Prime', monospace;
 }
+.courier-prime-accent{
+    font-family: 'Courier Prime', monospace;
+    font-weight: bold;
+    color: blue;
+    font-size: 2em;
+}
 
 footer {
     height: 30vh;
@@ -233,18 +239,29 @@ form button:hover {
 
 /*------HERO STILIAI ----- */
 #hero{
-    height: 100vh;
+    height: 120vh;
 }
 #aboutUs, #contactUs{
-    height: 50vh;
+    height: 80vh;
 
 }
 #hero, #aboutUs{
     background-color: lightgrey;
-    h1 {}
+    /* background-color: #333; */
+    
+    h1 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        line-height: 1.2em;
+    }
 
     p {
-        padding: 10px;
+        padding: 20px;
+        /* margin: 0 0.5rem; */
+        font-size: 1.5em;
+        line-height: 1.5em;
+        /* font-weight: bold; */
     }
 
     h2 {
@@ -270,7 +287,8 @@ form button:hover {
 
     a:hover {
         color: rgb(255, 255, 255);
-    }}
+    }
+}
 
 .bebrai{
     text-align: center;
