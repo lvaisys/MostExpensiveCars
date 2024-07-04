@@ -12,7 +12,7 @@ header {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0);
     position: fixed;
     width: 100vw;
     
@@ -27,6 +27,7 @@ header {
     border: none;
     z-index: 10;
     padding: 10px;
+    color:antiquewhite;
     
 }
 
